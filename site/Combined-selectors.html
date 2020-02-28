@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Combined Selectors + Child Selectors + descendent selectors Practice</title>
+	<style>
+		/*All with class 'highlight'*/
+		.highlight{
+			background-color: green;
+		}
+
+		/*all p elements with class="highlight"*/
+		p.highlight{
+			font-style: italic;
+		}
+
+		/*all elements with class 'highlight' as well as with class 'mainpoint'.*/
+		.highlight.mainpoint{
+			color: red;
+			background-color: black;
+		}
+
+		/* any article element which is a direct child of a section element*/
+		section > article{
+			color: green;
+			font-size: 24px;
+		}
+
+		/* any h2 element which is a direct child of a section element*/
+		section > h2{
+			color: green;
+		}
+
+		/* all list elements that are inside a section element*/
+		section li{
+			color: yellow;
+			font-size: 40px;
+		}
+
+
+	</style>
+</head>
+<body>
+<h1>Anatomy of a CSS Rule</h1>
+<h2>Subheading 1</h2>
+<p class="highlight">CSS works by associating rules with HTML elements. These rules govern hopw the content of specified elements should be displayed. A CSS rule contains two parts: a selector and a declaration.</p>
+<h2>Subheading 2</h2>
+<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo!</p>
+<div class="mainpoint highlight">This is the main point of the entire article. But its gunna be highlighted too hopefully
+</div>
+<br>
+<section>This is a section
+	<br>
+	<h2>This is a section Header</h2>
+<article>This is an article contained within a section. Things will be contained in it.</article>
+</section>
+<h2>This is a list header. Note that it is not contained within a section so that css is not applied here.</h2>
+<section>
+	Table of contents
+	<ul>
+		<li>Article 1</li>
+		<li>Article 2</li>
+		<li>Article 3</li>
+	</ul>
+</section>
+<article>
+	Shopping list (this is an article. The previous list is a section)
+	<ul>
+		<li>Cookies</li>
+		<li>Cake</li>
+		<li>Pie</li>
+	</ul>
+</article>
+</body>
+</html>
