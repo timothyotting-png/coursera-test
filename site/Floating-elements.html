@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Floating Elements</title>
+	<style>
+		
+		div {
+			background-color: #00FFFF;
+		}
+
+		p {
+			width: 50px;
+			height: 50px;
+			border: 1px solid black;
+			margin-right: 10px;
+		}
+
+		#p1 {
+			background-color: #A52A2A;
+			float: left;
+			height: 150px;
+		}
+		#p1:hover{
+			background-color: blue
+		}
+		#p2 {
+			background-color: #DEB887;
+			float: right;
+			height: 150px;
+		}
+		#p3 {
+			background-color: #5F9EA0;
+			clear: both;
+		}
+		#p4 {
+			background-color: #FF7F50;
+		}
+		#pstuff {
+			width: 50%;
+			height: 200px;
+			border: solid black;
+			margin: 0px;
+			float: left;
+			background-color: maroon;
+			overflow: auto;
+			box-sizing: border-box;
+
+		}
+		#pstuff2 {
+			width: 50%;
+			height: 200px;
+			border: solid black;
+			margin: 0px;
+			float: right;
+			background-color: red;
+			align-items: right;
+			overflow: auto;
+			box-sizing: border-box;
+		}
+		#pstuff:hover {
+			background-color: blue;
+		}
+
+		section {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+
+<div>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<section>This is regular content continuing after the paragraph boxes</section>
+	<p id="pstuff">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book | Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen bookLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+	<p id="pstuff2">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen bookLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen bookLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+</div>
+
+</body>
+</html>
